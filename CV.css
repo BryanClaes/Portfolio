@@ -3,3 +3,161 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+header {
+    background: #0073e6;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #1F272A;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+nav .nav-link {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav .nav-link:hover .nav-activelink {
+    background-color: white;
+    color: black;
+}
+
+main {
+    padding: 2rem;
+}
+
+h1, h2 {
+    color: cornflowerblue;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: white;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+}
+
+.foto__container {
+    display: flex;
+    flex-direction: column;
+}
+.foto__item {
+    display: flex;
+    margin: 2rem;
+}
+.foto__item img {
+    width: 25%;
+    flex: 1;
+    padding: 1rem;
+}
+.foto__iteminfo {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.hover-effect {
+    width: 200px;
+    border: 2px solid cornflowerblue;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.5rem;
+    border: 1px solid darkgrey;
+}
+
+tbody tr:nth-child(odd) {
+    background: white;
+}
+
+tbody tr:nth-child(even) {
+    background: lightgrey;
+}
+
+footer {
+    background: cornflowerblue;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+}
+
+#back-to-top {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+#back-to-top:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 0.5rem 0;
+    }
+
+    .hover-effect {
+        width: 150px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 0.3rem;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
